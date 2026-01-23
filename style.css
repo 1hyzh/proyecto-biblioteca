@@ -47,3 +47,13 @@ body{
     color: #201f27;
     font-size: 24px;
 }
+.footer {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    padding: 5px;
+    margin: 3px auto;
+    background-color: #192a3d;
+    color: aliceblue;
+}
