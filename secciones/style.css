@@ -1,0 +1,59 @@
+body{
+    background-color: #b9b8c7;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+/* Titulo y barra de navegacion. */
+.titulo {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    padding: 5px;
+    margin: 3px;
+    background-color: #192a3d;
+}
+.titulo h1{
+    color: aliceblue;
+}
+
+.navbar {
+    display: flex;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 5px;
+    margin: 3px;
+    background-color: #192a3d;
+    justify-content: center;
+}
+
+.navbar a {
+    font-size: 20px;
+    color: #b9b8c7;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 20px;
+    transition: background-color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+    transition: font-size .2s ease-in-out;
+}
+
+.navbar a:hover{
+    background-color: #b9b8c7;
+    color: #201f27;
+    font-size: 24px;
+}
+.footer {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    padding: 5px;
+    margin: 3px auto;
+    background-color: #192a3d;
+    color: aliceblue;
+}
