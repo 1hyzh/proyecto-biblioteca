@@ -57,3 +57,19 @@ body{
     background-color: #192a3d;
     color: aliceblue;
 }
+
+.navbar .inicio{
+    background-color: #384f62;
+}
+
+.izq {
+    background-color: #dad9e6;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 2px;
+    font-family: "Lato";
+}
+.foto_Juande {
+    display: flex;
+    justify-content: center;
+}
