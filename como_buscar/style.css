@@ -92,3 +92,19 @@ body {
     color: #8b9bb4;
     border-radius: 14px;
 }
+.card_1{
+    background-color: #192a3d;
+    border-radius: 15px;
+    padding: 5px;
+    border-color: #101214;
+    margin: 5px;
+    border-color: #8b9bb4
+}
+.card_2{
+    background-color: #192a3d;
+    border-radius: 15px;
+    padding: 5px;
+    border-color: #101214;
+    margin: 5px;
+    border-color: #8b9bb4
+}
