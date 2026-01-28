@@ -1,3 +1,7 @@
+hr {
+    visibility: hidden;
+}
+
 body {
     background-color: #101214;
     color: #f0f8ff; /* Aliceblue ligeramente más suave */
