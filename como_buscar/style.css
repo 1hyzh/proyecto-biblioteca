@@ -1,6 +1,6 @@
 body {
     background-color: #101214;
-    color: #f0f8ff; /* Aliceblue ligeramente más suave */
+    color: #f0f8ff;
     line-height: 1.6;
     margin: 0;
 }
@@ -22,12 +22,12 @@ body {
     padding: 2rem;
     margin-bottom: 10px;
     background-color: #192a3d;
-    border-radius: 14px 14px 4px 4px; /* Bordes redondeados superiores */
+    border-radius: 14px 14px 4px 4px;
 }
 
 .navbar {
     display: flex;
-    align-items: center; /* Centra verticalmente los items */
+    align-items: center;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     padding: 10px 20px;
@@ -35,7 +35,7 @@ body {
     background-color: #192a3d;
     justify-content: flex-start;
     border-radius: 14px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Sombra para dar profundidad */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
 .navbar h1 {
@@ -52,13 +52,13 @@ body {
     padding: 8px 15px;
     margin: 0 10px;
     border-radius: 8px;
-    transition: all .3s ease; /* Transición más fluida */
+    transition: all .3s ease;
 }
 
 .navbar a:hover {
     background-color: #b9b8c7;
     color: #101214;
-    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+    transform: translateY(-2px);
 }
 
 /* Estilo especial para el botón de búsqueda */
@@ -72,6 +72,7 @@ body {
     background-color: #4a6780;
     color: white;
 }
+
 .footer {
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -84,30 +85,51 @@ body {
     border-radius: 14px;
 }
 
+/* ✅ UPDATED */
 .contenido {
-    background-color: #1e1e21; /* Un gris oscuro más integrado */
+    background-color: #1e1e21;
     padding: 30px;
     border-radius: 14px;
     min-height: 200px;
     border: 1px solid #2a2a2d;
+
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
 }
 
-.card_1{
+/* ✅ NEW */
+.grid-ayuda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card_1 {
     background-color: #192a3d;
     border-radius: 15px;
-    padding: 5px; 
+    padding: 5px;
     margin: 5px;
     border: 2px solid #8b9bb4;
 }
 
-.card_2{
+.card_2 {
     background-color: #192a3d;
     border-radius: 15px;
     padding: 5px;
     border: 2px solid #8b9bb4;
     margin: 5px;
-     
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenido img {
+        margin-top: 20px;
+    }
 }
