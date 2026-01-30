@@ -1,0 +1,96 @@
+hr {
+    visibility: hidden;
+}
+
+body {
+    background-color: #101214;
+    color: #f0f8ff; /* Aliceblue ligeramente más suave */
+    line-height: 1.6;
+    margin: 0;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Titulo y barra de navegacion. */
+
+.titulo {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 10px;
+    background-color: #192a3d;
+    border-radius: 14px 14px 4px 4px; /* Bordes redondeados superiores */
+}
+
+.navbar {
+    display: flex;
+    align-items: center; /* Centra verticalmente los items */
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #192a3d;
+    justify-content: flex-start;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Sombra para dar profundidad */
+}
+
+.navbar h1 {
+    color: aliceblue;
+    font-size: 1.5rem;
+    margin-right: 30px;
+    filter: drop-shadow(0 0 2px rgba(255,255,255,0.2));
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #b9b8c7;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 10px;
+    border-radius: 8px;
+    transition: all .3s ease; /* Transición más fluida */
+}
+
+.navbar a:hover {
+    background-color: #b9b8c7;
+    color: #101214;
+    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+}
+.footer {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 20px;
+    margin: 40px auto 20px;
+    background-color: #192a3d;
+    color: #8b9bb4;
+    border-radius: 14px;
+}
+
+.navbar .imagenes{
+    background-color: #384f62;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+   
+}
+.contenido {
+    background-color: #1e1e21; /* Un gris oscuro más integrado */
+    padding: 30px;
+    border-radius: 14px;
+    min-height: 200px;
+    border: 1px solid #2a2a2d;
+}
