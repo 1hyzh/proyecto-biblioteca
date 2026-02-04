@@ -94,3 +94,17 @@ body {
     min-height: 200px;
     border: 1px solid #2a2a2d;
 }
+.fotos a {
+    font-size: 18px;
+    color: #b9b8c7;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 10px;
+    border-radius: 8px;
+    transition: all .3s ease;
+}
+fotos a:hover {
+    background-color: #b9b8c7;
+    color: #101214;
+    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+}
