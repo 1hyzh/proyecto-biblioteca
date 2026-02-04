@@ -95,6 +95,7 @@ body {
     border: 1px solid #2a2a2d;
 }
 .fotos a {
+    display: flex;
     font-size: 18px;
     color: #b9b8c7;
     text-decoration: none;
