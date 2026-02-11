@@ -87,25 +87,40 @@ body {
     height: 100px;
    
 }
+/* Tu contenedor principal */
 .contenido {
-    background-color: #1e1e21; /* Un gris oscuro más integrado */
+    background-color: #1e1e21;
     padding: 30px;
     border-radius: 14px;
     min-height: 200px;
     border: 1px solid #2a2a2d;
 }
+
+/* 1. Agregamos Flexbox al contenedor de los botones */
+.fotos {
+    display: flex;            /* Alinea los hijos en fila */
+    flex-wrap: wrap;        /* Si no caben, saltan a la siguiente línea */
+    justify-content: center;  /* Los centra horizontalmente */
+    gap: 10px;               /* Espacio uniforme entre botones */
+}
+
+/* 2. Ajustes en los botones (enlaces) */
 .fotos a {
     display: flex;
+    align-items: center;     /* Centra la imagen/texto verticalmente */
+    justify-content: center;
     font-size: 18px;
     color: #b9b8c7;
     text-decoration: none;
     padding: 8px 15px;
-    margin: 0 10px;
+    /* margin: 0 10px;  <- Puedes quitar el margin y usar 'gap' en el padre */
     border-radius: 8px;
     transition: all .3s ease;
+    border: 1px solid transparent; /* Opcional: evita saltos al poner bordes */
 }
+
 .fotos a:hover {
     background-color: #b9b8c7;
     color: #101214;
-    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+    transform: translateY(-2px);
 }
