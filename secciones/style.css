@@ -84,6 +84,7 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+
 .card_1{
     background-color: #192a3d;
     border-radius: 15px;
@@ -138,4 +139,23 @@ body {
     border: 2px solid #8b9bb4;
     margin: 5px;
      
+}
+
+/* Esto aplica a todas tus tarjetas a la vez */
+[class^="card_"] {
+    display: flex;             /* Activa el modo horizontal */
+    align-items: center;      /* Centra verticalmente el texto con la imagen */
+    justify-content: space-between; /* Empuja la imagen al extremo derecho */
+    text-align: left;         /* Asegura que el texto empiece a la izquierda */
+}
+
+/* Para que el texto no se pegue a la imagen */
+[class^="card_"] p, [class^="card_"] h3 {
+    margin-right: 20px; 
+}
+
+/* Evita que la imagen se deforme */
+[class^="card_"] img {
+    flex-shrink: 0;
+    border-radius: 8px; /* Opcional: para que la foto se vea más integrada */
 }
