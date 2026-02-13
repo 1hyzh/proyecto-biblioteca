@@ -12,19 +12,13 @@ body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Titulo y barra de navegacion */
-.titulo {
+.section-title {
     font-family: "Lato", sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    padding: 2rem;
-    margin-bottom: 10px;
-    background-color: #192a3d;
-    border-radius: 14px 14px 4px 4px;
+    margin-bottom: 20px;
+    color: #8b9bb4;
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     align-items: center;
@@ -42,7 +36,6 @@ body {
     color: aliceblue;
     font-size: 1.5rem;
     margin-right: 30px;
-    filter: drop-shadow(0 0 2px rgba(255,255,255,0.2));
 }
 
 .navbar a {
@@ -61,21 +54,71 @@ body {
     transform: translateY(-2px);
 }
 
-/* Estilo especial para el botón de búsqueda */
 .navbar .como_buscar {
     background-color: #384f62;
     color: white;
     border: 1px solid rgba(255,255,255,0.1);
 }
 
-.navbar .como_buscar:hover {
-    background-color: #4a6780;
-    color: white;
+/* Contenido Principal */
+.contenido {
+    background-color: #1e1e21;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #2a2a2d;
+    display: flex;
+    flex-direction: row; /* Alinea texto e imágenes de lado a lado */
+    align-items: flex-start;
+    gap: 30px;
 }
 
+/* Columna de Texto */
+.grid-ayuda {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna para las cards de texto */
+    gap: 20px;
+    flex: 2;
+}
+
+.card_1, .card_2 {
+    background-color: #192a3d;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #8b9bb4;
+}
+
+/* Columna de Imágenes */
+.columna-imagenes {
+    display: flex;
+    flex-direction: column; /* Esto pone una imagen debajo de la otra */
+    gap: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.card-img {
+    background-color: #192a3d;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #384f62;
+    text-align: center;
+}
+
+.card-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card-img p {
+    margin: 0;
+    color: #8b9bb4;
+}
+
+/* Footer */
 .footer {
     font-family: "Lato", sans-serif;
-    font-weight: 300;
     font-size: 0.9rem;
     text-align: center;
     padding: 20px;
@@ -85,51 +128,13 @@ body {
     border-radius: 14px;
 }
 
-/* ✅ UPDATED */
-.contenido {
-    background-color: #1e1e21;
-    padding: 30px;
-    border-radius: 14px;
-    min-height: 200px;
-    border: 1px solid #2a2a2d;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-}
-
-/* ✅ NEW */
-.grid-ayuda {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.card_1 {
-    background-color: #192a3d;
-    border-radius: 15px;
-    padding: 5px;
-    margin: 5px;
-    border: 2px solid #8b9bb4;
-}
-
-.card_2 {
-    background-color: #192a3d;
-    border-radius: 15px;
-    padding: 5px;
-    border: 2px solid #8b9bb4;
-    margin: 5px;
-}
-
-/* 📱 Responsive */
-@media (max-width: 768px) {
+/* Responsive */
+@media (max-width: 900px) {
     .contenido {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* En móviles, todo va en una sola columna */
     }
-
-    .contenido img {
-        margin-top: 20px;
+    
+    .columna-imagenes {
+        width: 100%;
     }
 }
