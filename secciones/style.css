@@ -1,6 +1,6 @@
 body {
     background-color: #101214;
-    color: #f0f8ff; /* Aliceblue ligeramente más suave */
+    color: #f0f8ff; 
     line-height: 1.6;
     margin: 0;
 }
@@ -10,7 +10,7 @@ body {
     max-width: 1200px;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
-/* Titulo y barra de navegacion. */
+
 .titulo {
     font-family: "Lato", sans-serif;
     font-weight: 900;
@@ -20,11 +20,11 @@ body {
     padding: 2rem;
     margin-bottom: 10px;
     background-color: #192a3d;
-    border-radius: 14px 14px 4px 4px; /* Bordes redondeados superiores */
+    border-radius: 14px 14px 4px 4px; 
 }
 .navbar {
     display: flex;
-    align-items: center; /* Centra verticalmente los items */
+    align-items: center; 
     font-family: "Lato", sans-serif;
     font-weight: 400;
     padding: 10px 20px;
@@ -32,7 +32,7 @@ body {
     background-color: #192a3d;
     justify-content: flex-start;
     border-radius: 14px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Sombra para dar profundidad */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
 }
 
 .navbar h1 {
@@ -49,13 +49,13 @@ body {
     padding: 8px 15px;
     margin: 0 10px;
     border-radius: 8px;
-    transition: all .3s ease; /* Transición más fluida */
+    transition: all .3s ease; 
 }
 
 .navbar a:hover {
     background-color: #b9b8c7;
     color: #101214;
-    transform: translateY(-2px); /* Pequeño salto hacia arriba */
+    transform: translateY(-2px); 
 }
 .footer {
     font-family: "Lato", sans-serif;
@@ -75,7 +75,7 @@ body {
 }
 
 .contenido {
-    background-color: #1e1e21; /* Un gris oscuro más integrado */
+    background-color: #1e1e21; 
     padding: 30px;
     border-radius: 14px;
     min-height: 400px;
@@ -83,6 +83,19 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.contenido a:hover{
+    background-color: #b9b8c7;
+    color: #101214;
+    transform: translateY(-2px); 
+}
+.contenido a{
+    color: #b9b8c7;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 0 10px;
+    border-radius: 8px;
+    transition: all .3s ease; 
 }
 
 .card_1{
@@ -141,21 +154,21 @@ body {
      
 }
 
-/* Esto aplica a todas tus tarjetas a la vez */
+
 [class^="card_"] {
-    display: flex;             /* Activa el modo horizontal */
-    align-items: center;      /* Centra verticalmente el texto con la imagen */
-    justify-content: space-between; /* Empuja la imagen al extremo derecho */
-    text-align: left;         /* Asegura que el texto empiece a la izquierda */
+    display: flex;             
+    align-items: center;     
+    justify-content: space-between;
+    text-align: left;       
 }
 
-/* Para que el texto no se pegue a la imagen */
+
 [class^="card_"] p, [class^="card_"] h3 {
     margin-right: 20px; 
 }
 
-/* Evita que la imagen se deforme */
+
 [class^="card_"] img {
     flex-shrink: 0;
-    border-radius: 8px; /* Opcional: para que la foto se vea más integrada */
+    border-radius: 8px; 
 }

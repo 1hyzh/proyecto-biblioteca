@@ -67,7 +67,7 @@ body {
     border-radius: 14px;
     border: 1px solid #2a2a2d;
     display: flex;
-    flex-direction: row; /* Alinea texto e imágenes de lado a lado */
+    flex-direction: row; 
     align-items: flex-start;
     gap: 30px;
 }
@@ -75,7 +75,7 @@ body {
 /* Columna de Texto */
 .grid-ayuda {
     display: grid;
-    grid-template-columns: 1fr; /* Una columna para las cards de texto */
+    grid-template-columns: 1fr; 
     gap: 20px;
     flex: 2;
 }
@@ -90,7 +90,7 @@ body {
 /* Columna de Imágenes */
 .columna-imagenes {
     display: flex;
-    flex-direction: column; /* Esto pone una imagen debajo de la otra */
+    flex-direction: column;
     gap: 20px;
     flex: 1;
     min-width: 250px;
